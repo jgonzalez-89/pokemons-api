@@ -7,9 +7,11 @@ const Img = styled.img`
     max-width: 80px;
     margin: 0 auto;
 `
-// const Nav = styled.nav`
+// const Nav = styled.div`
 //     background-image: url('../images/sky.png');
 //     background-repeat: no-repeat;
+//     background-size:cover;
+//     background-position:center;
 // `
 
 const Navbar = () => {

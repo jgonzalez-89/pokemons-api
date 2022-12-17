@@ -24,11 +24,9 @@ const Header = () => {
 				<div className="col-lg-6 col-md-8 mx-auto">
 					<Img src={PokeImg} alt="..." />
 					<p>
-						<Button type="button" class="btn btn-warning">Gen 1</Button>
-						<Button type="button" class="btn btn-warning">Gen 2</Button>
-						<Button type="button" class="btn btn-warning">Gen 3</Button>
-						<Button type="button" class="btn btn-warning">Gen 4</Button>
-						<Button type="button" class="btn btn-warning">Gen 5</Button>
+						<Button type="button" class="btn btn-warning">Generation 1</Button>
+						<Button type="button" class="btn btn-warning">Generation 2</Button>
+						<Button type="button" class="btn btn-warning">Generation 3</Button>
 					</p>
 				</div>
 			</div>

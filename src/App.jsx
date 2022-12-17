@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import PokemonCard from "./components/PokemonCard";
@@ -17,18 +18,9 @@ function App() {
         <PokemonCard />
         <PokemonCard />
         <PokemonCard />
-        <PokemonCard />
-        <PokemonCard />
-        <PokemonCard />
-        <PokemonCard />
-        <PokemonCard />
-        <PokemonCard />
-        <PokemonCard />
-        <PokemonCard />
-        <PokemonCard />
-        <PokemonCard />
-        <PokemonCard />
+
       </div>
+      <Footer />
     </>
   );
 }
