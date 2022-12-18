@@ -2,6 +2,6 @@ footer{
     background-image: url('../images/foot.png');
     background-repeat: no-repeat;
     background-size:cover;
-    background-position:center;
+    /* background-position:center; */
 
   }

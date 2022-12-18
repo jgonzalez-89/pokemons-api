@@ -16,6 +16,7 @@ const Img = styled.img`
 
 const Navbar = () => {
   return (
+    <div className="container">
     <nav className="navbar navbar-expand-sm navbar-light">
       <div className="container-fluid">
         <Img src={PokeBall} alt=""/>
@@ -70,6 +71,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+    </div>
   );
 };
 
