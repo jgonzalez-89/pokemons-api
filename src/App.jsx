@@ -18,7 +18,6 @@ function App() {
         <PokemonCard />
         <PokemonCard />
         <PokemonCard />
-
       </div>
       <Footer />
     </>
