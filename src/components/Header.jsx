@@ -24,13 +24,13 @@ const Header = () => {
         <div className="col-lg-6 col-md-8 mx-auto">
           <Img src={PokeImg} alt="..." />
           <p>
-            <Button type="button" class="btn btn-warning">
+            <Button type="button" className="btn btn-warning">
               Generation 1
             </Button>
-            <Button type="button" class="btn btn-warning">
+            <Button type="button" className="btn btn-warning">
               Generation 2
             </Button>
-            <Button type="button" class="btn btn-warning">
+            <Button type="button" className="btn btn-warning">
               Generation 3
             </Button>
           </p>

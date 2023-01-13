@@ -1,8 +1,10 @@
 import { useState } from "react";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-import PokemonCard from "./components/PokemonCard";
+import PokemonList from "./components/PokemonList";
+// import PokemonCard from "./components/PokemonCard";
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,14 +14,8 @@ function App() {
       <Navbar />
       <Header />
       <div className="container-fluid row align-items-center justify-content-center">
-        <PokemonCard />
-        <PokemonCard />
-        <PokemonCard />
-        <PokemonCard />
-        <PokemonCard />
-        <PokemonCard />
-      </div>
-      <Footer />
+      </div> 
+      <PokemonList />
     </>
   );
 }

@@ -3,9 +3,9 @@ import "./footer.css";
 
 const Footer = () => {
   return (
-    <div className="container">
+    <div className="container fixed-bottom">
       <footer className="py-3 my-4">
-        <ul className="nav justify-content-center pb-0 mb-0">
+        <ul className="nav justify-content-center  pb-0 mb-0">
           <li className="nav-item">
             <a href="#" className="nav-link px-2 text-muted">
               Home
