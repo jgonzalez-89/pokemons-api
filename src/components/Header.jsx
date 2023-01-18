@@ -15,6 +15,11 @@ const Button = styled.button`
   color: #00428a;
   border: 1px solid #00428a;
   font-weight: 700;
+  &:hover {
+    background-color: #00428a;
+    color: #ffcb00;
+    cursor: pointer;
+  }
 `;
 
 const Header = () => {
@@ -24,13 +29,13 @@ const Header = () => {
         <div className="col-lg-6 col-md-8 mx-auto">
           <Img src={PokeImg} alt="..." />
           <p>
-            <Button type="button" className="btn btn-warning">
+            <Button type="button">
               Generation 1
             </Button>
-            <Button type="button" className="btn btn-warning">
+            <Button type="button">
               Generation 2
             </Button>
-            <Button type="button" className="btn btn-warning">
+            <Button type="button">
               Generation 3
             </Button>
           </p>
