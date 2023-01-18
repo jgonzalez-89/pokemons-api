@@ -29,14 +29,29 @@ const Header = () => {
         <div className="col-lg-6 col-md-8 mx-auto">
           <Img src={PokeImg} alt="..." />
           <p>
-            <Button type="button">
+            <Button type="button" onClick={() => setGeneration(1)}>
               Generation 1
             </Button>
-            <Button type="button">
+            <Button type="button" onClick={() => setGeneration(2)}>
               Generation 2
             </Button>
-            <Button type="button">
+            <Button type="button" onClick={() => setGeneration(3)}>
               Generation 3
+            </Button>
+            <Button type="button" onClick={() => setGeneration(4)}>
+              Generation 4
+            </Button>
+            <Button type="button" onClick={() => setGeneration(5)}>
+              Generation 5
+            </Button>
+            <Button type="button" onClick={() => setGeneration(6)}>
+              Generation 6
+            </Button>
+            <Button type="button" onClick={() => setGeneration(7)}>
+              Generation 7
+            </Button>
+            <Button type="button" onClick={() => setGeneration(8)}>
+              Generation 8
             </Button>
           </p>
         </div>

@@ -1,23 +1,23 @@
 import React from "react";
 import PokeBall from "../images/pokeball.png";
 import styled from "styled-components";
-import "./navbar.css";
+import img from "../images/sky.png";
 
 const Img = styled.img`
   max-width: 80px;
   margin: 0 auto;
 `;
-// const Nav = styled.div`
-//     background-image: url('../images/sky.png');
-//     background-repeat: no-repeat;
-//     background-size:cover;
-//     background-position:center;
-// `
+const Nav = styled.div`
+  background-image: url(${img});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+`;
 
 const Navbar = () => {
   return (
     <div className="container">
-      <nav className="navbar navbar-expand-sm navbar-light rounded">
+      <Nav className="navbar navbar-expand-sm navbar-light rounded">
         <div className="container-fluid">
           <Img src={PokeBall} alt="" />
 
@@ -70,7 +70,7 @@ const Navbar = () => {
             </form>
           </div>
         </div>
-      </nav>
+      </Nav>
     </div>
   );
 };
