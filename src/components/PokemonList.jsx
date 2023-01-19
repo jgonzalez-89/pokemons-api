@@ -34,12 +34,25 @@ function PokemonList() {
   useEffect(() => {
     async function fetchData() {
       const response = await fetch(
-        `https://pokeapi.co/api/v2/generation/${generation}`
+        `https://pokeapi.co/api/v2/generation/${generation}/?limit=20`
       );
       const data = await response.json();
+
+      const mapa = {}
+      data.pokemon_species.forEach(pk => {mapa[pk.name] = pk})
+
       setPokemons(data.pokemon_species);
       setType(data.types)
-      // console.log(data)
+      await data.pokemon_species.reduce(async (previousPromise, pkmn) => {
+        await previousPromise
+        let pk = await fetch(`https://pokeapi.co/api/v2/pokemon/${pkmn.name}`)
+        let dat = await pk.json()
+        mapa[pkmn.name] = {...mapa[pkmn.name], ...dat}
+        return Promise.resolve()
+      }, Promise.resolve())
+
+      let fullInfo = Object.values(mapa)
+      console.log(fullInfo)
     }
     fetchData();
   }, [generation]);
@@ -56,7 +69,7 @@ function PokemonList() {
 
   return (
     <div className="mipo container">
-      <Header />
+      <Header setGeneration={setGeneration}/>
       <div className="d-flex justify-content-center flex-wrap">
         {pokemons.map((pokemon) => {
           let id = pokemon.url.split("/")[6];
